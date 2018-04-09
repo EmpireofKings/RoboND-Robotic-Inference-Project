@@ -5,8 +5,8 @@ import cv2
 cap = cv2.VideoCapture(0)
 
 number = 0
-set_dir   = 'AED50'
-name_type = 'AED50_back'
+set_dir   = 'AED'
+name_type = 'AED_'
 
 print ("Photo capture enabled! Press esc to take photos!")
 
