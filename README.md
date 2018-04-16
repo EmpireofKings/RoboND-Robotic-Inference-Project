@@ -3,32 +3,17 @@
 Robotic Inference using NVidia DIGITS and NVidia Jetson TX2 Development Board
 
 
-%% (c) Muthanna A. Attyah 
-%% April 2018
+### (c) Muthanna A. Attyah 
+### April 2018
 
-\documentclass[10pt,journal,compsoc]{IEEEtran}
 
-\usepackage[pdftex]{graphicx}    
-\usepackage{cite}
-\usepackage{float}
+# Classifying banknotes using Neural Network
 
-\title{Classifying banknotes using Neural Network}
-\author{Muthanna A. Attyah}
-\date{April 2018}
-
-%% Start of Document %%
-
-\begin{document}
-
-\markboth{Inference project by Muthanna A. Attyah - April 2018, Robotic Nanodegree, Udacity}
-{}
-\IEEEtitleabstractindextext{
-
-\begin{abstract}
+# Abstract
 This paper is to present an attempt to use a neural network to classify banknotes as a cheaper alternative to the complicated/costly optical sensor based machines. Neural network based classification will allow faster adoption of newly issued banknotes which will require software training instead of sensor hardware upgrades.
-\end{abstract}
 
-\begin{IEEEkeywords}
+
+
 Udacity, deep learning, Banknotes classification, neural networks, GoogLeNet.
 \end{IEEEkeywords}}
 
