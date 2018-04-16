@@ -202,3 +202,11 @@ Accuracy can be much improved by adding more captured data per class but again t
 <p align="center"> <img src="./misc/supplied_data_6.png"> </p>
 <p align="center"> <img src="./misc/supplied_data_7.png"> </p>
 
+<p align="center"> <img src="./misc/banknotes_alexnet_1.png"> </p>
+<p align="center"> <img src="./misc/banknotes_googlenet_1.png"> </p>
+<p align="center"> <img src="./misc/banknotes_googlenet_2.png"> </p>
+<p align="center"> <img src="./misc/banknotes_googlenet_3.png"> </p>
+<p align="center"> <img src="./misc/banknotes_googlenet_4.png"> </p>
+
+<p align="center"> <img src="./misc/code.png"> </p>
+<p align="center"> <img src="./misc/imagenet_on_tx2.png"> </p>
