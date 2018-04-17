@@ -44,6 +44,8 @@ Supplied Data from Udacity was having 3 classes (Bottle, Candy Box, Nothing)
 \end{center}
 \end{table}
 
+<p align="center"> <img src="./misc/supplied_data_1.png"> </p>
+
 Captured Data of the different banknotes denominations was collected using a \textbf{Microsoft Life-Cam HD-3000} Web Camera connected to USB port. all images was captured in \textbf{RGB color}, \textbf{640x480} pixels. For each denomination 200 images were captured, 100 for the front side of the banknote and 100 images for the backside.
 
 A total of 1400 images was collected as described in table \ref{table:2}.
@@ -114,7 +116,7 @@ Results are divided into two parts; the first is using the supplied data from Ud
 
 Supplied data was used to test both AlexNet and GoogLeNet architectures. Accuracy of GoogLeNet was higher than AlexNet when using the same number of epochs. However both networks was able to achieve the required accuracy greater than 75 percent. Required inference time was better when using AlexNet but again both was able to achieve an inference time of 10 ms or less. Results are as shown in below figures.
 
-* Fig 4: Supplied Data Learning Curves using AlexNet}
+* Fig 4: Supplied Data Learning Curves using AlexNet
 <p align="center"> <img src="./misc/supplied_data_7.png"> </p>
 
 * Fig 5: Supplied Data Learning Curves using GoogLeNet
@@ -156,7 +158,7 @@ Accuracy can be much improved by adding more captured data per class but again t
 
 
 * Fig 11: Other Screen Captures.
-<p align="center"> <img src="./misc/supplied_data_1.png"> </p>
+
 <p align="center"> <img src="./misc/supplied_data_3.png"> </p>
 <p align="center"> <img src="./misc/banknotes_googlenet_2.png"> </p>
 <p align="center"> <img src="./misc/banknotes_googlenet_4.png"> </p>
