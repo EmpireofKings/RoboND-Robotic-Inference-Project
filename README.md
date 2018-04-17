@@ -17,12 +17,8 @@ This paper is to present an attempt to use a neural network to classify banknote
 
 The selected problem of UAE banknotes has 7 classes (AED 500,200,100,50,20,10, and 5) to be identified, Color images is required to improve recognition of colorful banknotes, smaller resolutions such as 32x32 will not be good enough considering the paper size of a banknote and tiny details in it. Speed of inference needs to be fast considering the big number of banknotes that will need to be checked per second. a 50+ frame per second is acceptable. Inference will be done on a machine that is connected to wall power socket as a result there is no need to consider power saving similar to what usually done with battery operated mobile solutions.
 
-\begin{figure}[H]
-      \centering
-      \includegraphics[width=\linewidth]{imagenet_on_tx2}
-      \caption{Metrics of networks running ImageNet on Jetson TX2}
-      \label{fig:imagenet_on_tx2}
-\end{figure} 
+<p align="center"> <img src="./misc/imagenet_on_tx2.png"> </p>
+* Fig 1: Metrics of networks running ImageNet on Jetson TX2
 
 Comparing the possible parameters of different neural network architectures (see fig.\ref{fig:imagenet_on_tx2}) \cite{ref3} and the requirement mentioned above GoogleNet neural network was found to be a good choice.
 
@@ -98,14 +94,10 @@ Data sizes for each class and total data size for the data folder is as showing 
 \end{center}
 \end{table}
 
-The 200 images per class was giving good accuracy results and it was selected considering the limited GPU computing time that was available during the training of the model however it can be certainly increased to bigger number if more accuracy was required. All data was captured using python code and OpenCV library; code is as showing in Fig.\ref{fig:code}
+The 200 images per class was giving good accuracy results and it was selected considering the limited GPU computing time that was available during the training of the model however it can be certainly increased to bigger number if more accuracy was required. All data was captured using python code and OpenCV library; code is as showing in Fig.2
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=\linewidth]{code}
-    \caption{Python code used to capture data}
-    \label{fig:code}
-\end{figure}
+<p align="center"> <img src="./misc/code.png"> </p>
+* Fig 2: Python code used to capture data
 
 Color images was collected instead of gray considering the importance of colors to help identify variations in banknotes. Resolution was selected to be 640x480 to ensure that it will be catering to the required neural network input size, resolution can be reduced to the exact required network input size at the time of training. However if required image size can be always reduced at the time of data capturing using the cv2.resize() function from OpenCV. Samples of the collected images are shown in Fig.\ref{fig:GoogLeNet_UAE_Banknote_3}
 
@@ -208,5 +200,5 @@ Accuracy can be much improved by adding more captured data per class but again t
 <p align="center"> <img src="./misc/banknotes_googlenet_3.png"> </p>
 <p align="center"> <img src="./misc/banknotes_googlenet_4.png"> </p>
 
-<p align="center"> <img src="./misc/code.png"> </p>
-<p align="center"> <img src="./misc/imagenet_on_tx2.png"> </p>
+
+
