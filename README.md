@@ -1,4 +1,4 @@
-# RoboND Robotic Inference
+# RoboND Robotic Inference Project
 
 Robotic Inference using NVidia DIGITS and NVidia Jetson TX2 Development Board
 
@@ -17,8 +17,8 @@ This paper is to present an attempt to use a neural network to classify banknote
 
 The selected problem of UAE banknotes has 7 classes (AED 500,200,100,50,20,10, and 5) to be identified, Color images is required to improve recognition of colorful banknotes, smaller resolutions such as 32x32 will not be good enough considering the paper size of a banknote and tiny details in it. Speed of inference needs to be fast considering the big number of banknotes that will need to be checked per second. a 50+ frame per second is acceptable. Inference will be done on a machine that is connected to wall power socket as a result there is no need to consider power saving similar to what usually done with battery operated mobile solutions.
 
-<p align="center"> <img src="./misc/imagenet_on_tx2.png"> </p>
 * Fig 1: Metrics of networks running ImageNet on Jetson TX2
+<p align="center"> <img src="./misc/imagenet_on_tx2.png"> </p>
 
 Comparing the possible parameters of different neural network architectures (see fig.\ref{fig:imagenet_on_tx2}) \cite{ref3} and the requirement mentioned above GoogleNet neural network was found to be a good choice.
 
@@ -96,17 +96,15 @@ Data sizes for each class and total data size for the data folder is as showing 
 
 The 200 images per class was giving good accuracy results and it was selected considering the limited GPU computing time that was available during the training of the model however it can be certainly increased to bigger number if more accuracy was required. All data was captured using python code and OpenCV library; code is as showing in Fig.2
 
-<p align="center"> <img src="./misc/code.png"> </p>
 * Fig 2: Python code used to capture data
+<p align="center"> <img src="./misc/code.png"> </p>
+
 
 Color images was collected instead of gray considering the importance of colors to help identify variations in banknotes. Resolution was selected to be 640x480 to ensure that it will be catering to the required neural network input size, resolution can be reduced to the exact required network input size at the time of training. However if required image size can be always reduced at the time of data capturing using the cv2.resize() function from OpenCV. Samples of the collected images are shown in Fig.\ref{fig:GoogLeNet_UAE_Banknote_3}
 
-\begin{figure}[H]
-	  \centering
-      \includegraphics[width=\linewidth]{GoogLeNet_UAE_Banknote_3}
-      \caption{Sample images from Banknotes captured data}
-      \label{fig:GoogLeNet_UAE_Banknote_3}
-\end{figure}
+
+* Fig 3:Sample images from Banknotes captured data
+<p align="center"> <img src="./misc/banknotes_googlenet_3.png"> </p>
 
 ## Results
 
@@ -116,63 +114,34 @@ Results are divided into two parts; the first is using the supplied data from Ud
 
 Supplied data was used to test both AlexNet and GoogLeNet architectures. Accuracy of GoogLeNet was higher than AlexNet when using the same number of epochs. However both networks was able to achieve the required accuracy greater than 75 percent. Required inference time was better when using AlexNet but again both was able to achieve an inference time of 10 ms or less. Results are as shown in below figures.
 
-\begin{figure}[H]
-      \centering
-      \includegraphics[width=\linewidth]{supplied_data_7}
-      \caption{Supplied Data Learning Curves using AlexNet}
-      \label{fig:supplied_data_7}
-\end{figure}
+* Fig 4: Supplied Data Learning Curves using AlexNet}
+<p align="center"> <img src="./misc/supplied_data_7.png"> </p>
 
-\begin{figure}[H]
-      \centering
-      \includegraphics[width=\linewidth]{supplied_data_2}
-      \caption{Supplied Data Learning Curves using GoogLeNet}
-      \label{fig:supplied_data_2}
-\end{figure}
+* Fig 5: Supplied Data Learning Curves using GoogLeNet
+<p align="center"> <img src="./misc/supplied_data_2.png"> </p>
 
-\begin{figure}[H]
-      \centering
-      \includegraphics[width=\linewidth]{supplied_data_6}
-      \caption{Supplied Data Evaluation using AlexNet}
-      \label{fig:supplied_data_6}
-\end{figure}
+* Fig 6: Supplied Data Evaluation using AlexNet
+<p align="center"> <img src="./misc/supplied_data_6.png"> </p>
 
-\begin{figure}[H]
-      \centering
-      \includegraphics[width=\linewidth]{supplied_data_4}
-      \caption{Supplied Data Evaluation Results using GoogLeNet}
-      \label{fig:supplied_data_4}
-\end{figure}
+* Fig 7: Supplied Data Evaluation Results using GoogLeNet
+<p align="center"> <img src="./misc/supplied_data_4.png"> </p>
 
 A single image test was done using GoogLeNet model and the result was as shown below, Identification was correct with 99.83\% confidence:
 
-\begin{figure}[H]
-      \centering
-      \includegraphics[width=\linewidth]{supplied_data_5}
-      \caption{Supplied Data Single Image Test}
-      \label{fig:supplied_data_5}
-\end{figure}
-
+* Fig 8: Supplied Data Single Image Test
+<p align="center"> <img src="./misc/supplied_data_5.png"> </p>
 
 ### Results-Using Captured Data
 
  AlexNet was tested with captured data but results was not good; 35\% accuracy was the maximum reached when using 50 epochs. 
 
-\begin{figure}[H]
-      \centering
-      \includegraphics[width=\linewidth]{banknotes_alexnet}
-      \caption{Banknotes learning Curves using AlexNet}
-      \label{fig:GoogLeNet_UAE_Banknote_1}
-\end{figure}
+* Fig 9: Banknotes learning Curves using AlexNet
+<p align="center"> <img src="./misc/banknotes_alexnet_1.png"> </p>
 
 Considering the very good results obtained when using GoogLeNet network architecture with the Udacity Supplied data, it was decided to use the same network for the banknote classification problem.
 
-\begin{figure}[H]
-      \centering
-      \includegraphics[width=\linewidth]{GoogLeNet_UAE_Banknote_1}
-      \caption{Banknotes Learning Curves using GoogLeNet}
-      \label{fig:GoogLeNet_UAE_Banknote_1}
-\end{figure}
+* Fig 10: Banknotes Learning Curves using GoogLeNet
+<p align="center"> <img src="./misc/banknotes_googlenet_1.png"> </p>
 
 As it is shown on the learning curves, 94\%+ accuracy was achieved when using 50 epochs which is great when using the captured data for test. 
 
@@ -186,18 +155,10 @@ GoogLeNet can be used as a viable replacement for the sensor based banknotes cla
 Accuracy can be much improved by adding more captured data per class but again this will require longer training time and more storage space to store the samples.
 
 
+* Fig 11: Other Screen Captures.
 <p align="center"> <img src="./misc/supplied_data_1.png"> </p>
-<p align="center"> <img src="./misc/supplied_data_2.png"> </p>
 <p align="center"> <img src="./misc/supplied_data_3.png"> </p>
-<p align="center"> <img src="./misc/supplied_data_4.png"> </p>
-<p align="center"> <img src="./misc/supplied_data_5.png"> </p>
-<p align="center"> <img src="./misc/supplied_data_6.png"> </p>
-<p align="center"> <img src="./misc/supplied_data_7.png"> </p>
-
-<p align="center"> <img src="./misc/banknotes_alexnet_1.png"> </p>
-<p align="center"> <img src="./misc/banknotes_googlenet_1.png"> </p>
 <p align="center"> <img src="./misc/banknotes_googlenet_2.png"> </p>
-<p align="center"> <img src="./misc/banknotes_googlenet_3.png"> </p>
 <p align="center"> <img src="./misc/banknotes_googlenet_4.png"> </p>
 
 
