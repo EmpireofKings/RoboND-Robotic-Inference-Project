@@ -96,6 +96,9 @@ Data sizes for each class and total data size for the data folder is as showing 
 \end{center}
 \end{table}
 
+<p align="center"> <img src="./misc/banknotes_googlenet_2.png"> </p>
+<p align="center"> <img src="./misc/banknotes_googlenet_4.png"> </p>
+
 The 200 images per class was giving good accuracy results and it was selected considering the limited GPU computing time that was available during the training of the model however it can be certainly increased to bigger number if more accuracy was required. All data was captured using python code and OpenCV library; code is as showing in Fig.2
 
 * Fig 2: Python code used to capture data
@@ -118,6 +121,7 @@ Supplied data was used to test both AlexNet and GoogLeNet architectures. Accurac
 
 * Fig 4: Supplied Data Learning Curves using AlexNet
 <p align="center"> <img src="./misc/supplied_data_7.png"> </p>
+<p align="center"> <img src="./misc/supplied_data_3.png"> </p>
 
 * Fig 5: Supplied Data Learning Curves using GoogLeNet
 <p align="center"> <img src="./misc/supplied_data_2.png"> </p>
@@ -155,13 +159,6 @@ There was big improvement in obtained accuracy when comparing GoogLeNet network 
 GoogLeNet can be used as a viable replacement for the sensor based banknotes classifications machines in many of the applications such as Identifying fake banknotes and deciding its fitness. GoogLeNet accuracy is very good in compare to other networks such as LeNet and ALexNet however this comes with cost of longer time required in both training and inference.
 
 Accuracy can be much improved by adding more captured data per class but again this will require longer training time and more storage space to store the samples.
-
-
-* Fig 11: Other Screen Captures.
-
-<p align="center"> <img src="./misc/supplied_data_3.png"> </p>
-<p align="center"> <img src="./misc/banknotes_googlenet_2.png"> </p>
-<p align="center"> <img src="./misc/banknotes_googlenet_4.png"> </p>
 
 
 
