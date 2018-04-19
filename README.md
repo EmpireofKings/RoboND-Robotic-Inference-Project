@@ -26,8 +26,7 @@ Comparing the possible parameters of different neural network architectures (see
 
 Supplied Data from Udacity was having 3 classes (Bottle, Candy Box, Nothing) 
 
-|-|-|-|
-|Class | Images | Image Shape|
+| Class | Images | Image Shape|
 |-|-|-|
 | Bottle | 3426 | 256x256x3 |
 | Candy Box | 1871 | 256x256x3 | 
