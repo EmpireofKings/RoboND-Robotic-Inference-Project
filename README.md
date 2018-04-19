@@ -33,75 +33,36 @@ Supplied Data from Udacity was having 3 classes (Bottle, Candy Box, Nothing)
 | Nothing | 2273 | 256x256x3 |
 | Total | 7570 |
 
-\begin{table}[H]
-\begin{center}
-\begin{tabular}{ |c|c|c| } 
- \hline
- Class & Images & Image Shape \\
- \hline
- Bottle & 3426 & 256x256x3 \\ 
- Candy Box & 1871 & 256x256x3 \\ 
- Nothing & 2273 & 256x256x3 \\
- \hline
- Total & 7570 & \\
- \hline
-\end{tabular}
-\caption{Count of supplied data images}
-\label{table:1}
-\end{center}
-\end{table}
-
 <p align="center"> <img src="./misc/supplied_data_1.png"> </p>
 
 Captured Data of the different banknotes denominations was collected using a \textbf{Microsoft Life-Cam HD-3000} Web Camera connected to USB port. all images was captured in \textbf{RGB color}, \textbf{640x480} pixels. For each denomination 200 images were captured, 100 for the front side of the banknote and 100 images for the backside.
 
 A total of 1400 images was collected as described in table \ref{table:2}.
 
-\begin{table}[H]
-\begin{center}
-\begin{tabular}{ |c|c|c|c| } 
- \hline
- Class & Front Images & Back Images & Image Shape \\
- \hline
- AED500 & 100 & 100 & 640x480x3 \\ 
- AED200 & 100 & 100 & 640x480x3 \\ 
- AED100 & 100 & 100 & 640x480x3 \\
- AED50 & 100 & 100 & 640x480x3 \\
- AED20 & 100 & 100 & 640x480x3 \\
- AED10 & 100 & 100 & 640x480x3 \\
- AED5 & 100 & 100 & 640x480x3 \\
- \hline
- Total & 700 & 700 & \\
- \hline
-\end{tabular}
-\caption{Count of captured data images}
-\label{table:2}
-\end{center}
-\end{table}
+| Class | Front Images | Back Images | Image Shape |
+|-|-|-|-| 
+| AED500 | 100 | 100 | 640x480x3 |
+| AED200 | 100 | 100 | 640x480x3 |
+| AED100 | 100 | 100 | 640x480x3 |
+| AED50 | 100 | 100 | 640x480x3 |
+| AED20 | 100 | 100 | 640x480x3 |
+| AED10 | 100 | 100 | 640x480x3 |
+| AED5 | 100 | 100 | 640x480x3 |
+| Total | 700 | 700 | |
+
 
 Data sizes for each class and total data size for the data folder is as showing in table \ref{table:3}.
 
-\begin{table}[H]
-\begin{center}
-\begin{tabular}{ |c|c| } 
-   \hline
-   Size&Folder\\
-   \hline
-	67M&Data/AED500\\ 
-	68M&Data/AED200\\ 
-	66M&Data/AED100\\ 
-	65M&Data/AED50\\ 
-	64M&Data/AED20\\ 
-	64M&Data/AED10\\ 
-	65M&Data/AED5\\
-    \hline
-	456M&Data\\ 
-	\hline
-\end{tabular}
-\caption{Size of captured data images}
-\label{table:3}
-\end{center}
-\end{table}
+| Size | Folder |
+|-|-| 
+| 67M | Data/AED500 |
+| 68M | Data/AED200 |
+| 66M | Data/AED100 |
+| 65M | Data/AED50 |
+| 64M | Data/AED20 |
+| 64M | Data/AED10 |
+| 65M | Data/AED5 |
+| 456M | Data |
 
 <p align="center"> <img src="./misc/banknotes_googlenet_2.png"> </p>
 <p align="center"> <img src="./misc/banknotes_googlenet_4.png"> </p>
