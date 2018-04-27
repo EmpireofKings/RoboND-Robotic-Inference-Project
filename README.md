@@ -80,7 +80,7 @@ Color images was collected instead of gray considering the importance of colors 
 <p align="center"> <img src="./misc/banknotes_googlenet_3.png"> </p>
 
 * Video on how data is collected
-<p align="center">[![test video](http://img.youtube.com/vi/TuRHv_Qd0-o/0.jpg)](http://www.youtube.com/watch?v=TuRHv_Qd0-o)</p>
+[![test video](http://img.youtube.com/vi/7NhKtxnHsTc&t=13s/0.jpg)](http://www.youtube.com/watch?v=7NhKtxnHsTc&t=13s)
 
 ## Results
 
