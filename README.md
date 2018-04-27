@@ -79,7 +79,8 @@ Color images was collected instead of gray considering the importance of colors 
 * Fig 3:Sample images from Banknotes captured data
 <p align="center"> <img src="./misc/banknotes_googlenet_3.png"> </p>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7NhKtxnHsTc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+* Video on how data is collected
+http://img.youtube.com/vi/7NhKtxnHsTc/0.jpg 
 
 ## Results
 
